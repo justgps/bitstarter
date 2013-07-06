@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
      if(err) response.send("500 error: " + err);
      var buff = new Buffer(data);
      //buff.toString(
-     response.send(buff);
+     response.send(buff.toString());
   });
 });
 
